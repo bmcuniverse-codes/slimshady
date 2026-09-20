@@ -1,0 +1,1 @@
+import {Sidebar} from "./Sidebar"; export function AdminShell({children}:{children:React.ReactNode}){return <><Sidebar/><main className="min-h-screen lg:ml-[260px]"><div className="mx-auto max-w-[1400px] p-5 pt-16 lg:p-8">{children}</div></main></>}

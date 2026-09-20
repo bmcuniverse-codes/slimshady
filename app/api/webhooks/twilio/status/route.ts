@@ -1,0 +1,2 @@
+import {NextResponse} from "next/server"; import {supabaseAdmin} from "@/lib/supabase/admin";
+export async function POST(req:Request){const f=await req.formData();const sid=String(f.get('MessageSid')||'');if(!sid)return new NextResponse('missing',{status:400});const db=supabaseAdmin();await db.from('message_recipients').update({status:String(f.get('MessageStatus')||''),error_code:String(f.get('ErrorCode')||'')||null,error_message:String(f.get('ErrorMessage')||'')||null,updated_at:new Date().toISOString()}).eq('twilio_sid',sid);return new NextResponse('OK')}

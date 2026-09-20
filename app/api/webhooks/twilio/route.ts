@@ -1,0 +1,1 @@
+import {NextResponse} from "next/server"; export async function POST(req:Request){const f=await req.formData();console.log("Twilio status",{sid:String(f.get("MessageSid")||""),status:String(f.get("MessageStatus")||""),to:String(f.get("To")||"")});return new NextResponse("OK",{status:200})}
