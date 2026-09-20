@@ -1,1 +1,15 @@
-{"name":"church-sms","version":"2.0.0","private":true,"scripts":{"dev":"next dev","build":"next build","start":"next start","lint":"eslint"},"dependencies":{"@supabase/ssr":"^0.7.0","@supabase/supabase-js":"^2.57.0","lucide-react":"^0.468.0","next":"^16.2.12","react":"^19.2.4","react-dom":"^19.2.4","twilio":"^5.10.3","xlsx":"^0.18.5"},"devDependencies":{"@tailwindcss/postcss":"^4.1.13","eslint":"^9.35.0","eslint-config-next":"^16.2.12","tailwindcss":"^4.1.13","typescript":"^5.9.2"}}
+{"name":"church-sms","version":"2.0.0","private":true,"scripts":{"dev":"next dev","build":"next build","start":"next start","lint":"eslint"},
+
+"dependencies":{"@supabase/ssr":"^0.7.0","@supabase/supabase-js":"^2.57.0","lucide-react":"^0.468.0","next":"^16.2.12","react":"^19.2.4","react-dom":"^19.2.4","twilio":"^5.10.3","xlsx":"^0.18.5"}, 
+
+
+"devDependencies": {
+      "@tailwindcss/postcss": "^4.1.13",
+        "@types/node": "^22.0.0",
+          "@types/react": "^19.0.0",
+            "eslint": "^9.35.0",
+              "eslint-config-next": "^16.2.12",
+                "tailwindcss": "^4.1.13",
+                  "typescript": "^5.9.2"
+                  }
+}
